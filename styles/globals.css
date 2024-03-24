@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-purple {
+  @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
+}
+.btn {
+  @apply outline outline-1 rounded-lg p-1 text-[12px] hover:bg-[#B4905E] hover:text-white hover:outline-none duration-300;
+}
+.card-btn {
+  @apply rounded-lg p-1 bg-[#B4905E] text-white font-semibold;
+}
+.tag {
+  @apply absolute top-0 right-0 bg-black text-[11px] text-white rounded-bl-lg p-1 opacity-90;
+}
+.brand {
+  @apply flex items-center px-48;
+}
+.footer-add {
+  @apply flex justify-center gap-2 my-2 mx-10 text-center md:text-left;
+}
+.scale {
+  @apply hover:scale-110 duration-100 ease-in-out;
+}
+.rounded-first {
+  @apply rounded-full -mb-20 p-1 w-44 ml-20 z-0 relative gradient-purple;
+}
+.rounded-second {
+  @apply rounded-full p-1  w-28 z-10 absolute -mt-4 ml-40 gradient-purple;
+}
+.carousel-image {
+  @apply w-full block h-[200px] opacity-90;
+}
+.makeup-forever {
+  @apply absolute -mt-3  text-base  text-white top-6 left-16  -translate-x-1/2 -translate-y-1/2;
+}
+.bridal-makeup {
+  @apply absolute mt-5  font-bold -top-2 -right-12  -translate-x-1/2 -translate-y-1/2;
+}
+.carousel-text {
+  @apply absolute text-sm  text-center  text-white w-full left-[200px] -bottom-3  -translate-x-1/2 -translate-y-1/2;
+}
+.carousel-btn {
+  @apply absolute text-base  text-white top-3/4 left-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-2;
+}
